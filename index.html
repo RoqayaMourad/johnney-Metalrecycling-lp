@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+<!-- header section -->
 <section id="header" class="header" data-interval="false">
-    <div class="header-content">
+    <div class="header-content pb-3">
         <div class="logo w-25 m-auto text-center py-lg-3">
             <img src="imgs/logo.jpeg" width="100px" height="60px" alt="">
         </div>
@@ -30,35 +30,34 @@
                     pariatur nemo odit modi nostrum!
                 </p>
                 <div class="justify-content-center pt-lg-4">
-                        <button class="info-btn btn py-lg-3 px-lg-2">
+                        <button class="info-btn btn py-lg-2 px-lg-2">
                             <a class="">Get A free Quote</a>
                         </button>
                 </div>
             </div>
         </div>
         <div class="header-bottom mb-5">
-            <form id="contact-form" method="post" action="contact.php" role="form">
-                <div class="messages"></div>
+            <form id="contact-form" method="post" action="*.php" role="form" class="py-lg-2">   
                 <div class="controls">
                     <div class="row">
                         <div class="col-sm-4">
                             <div class="form-group">
-                                <label for="form_name">Name *</label>
-                                <input id="form_name" type="text" name="surname" class="form-control" placeholder="Please enter your name *" required="required" data-error="name is required.">
+                                <label for="form_name" class="label">Name *</label>
+                                <input id="form_name" type="text" name="surname" class="form-control" required="required" data-error="name is required.">
                                 <div class="help-block with-errors"></div>
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="form-group">
                                 <label for="form_email">Email *</label>
-                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                <input id="form_email" type="email" name="email" class="form-control" required="required" data-error="Valid email is required.">
                                 <div class="help-block with-errors"></div>
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="form-group">
-                                <label for="form_phone">Phone</label>
-                                <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone number">
+                                <label for="form_subject">Subject *</label>
+                                <input id="form_subject" type="tel" name="subject" class="form-control">
                                 <div class="help-block with-errors"></div>
                             </div>
                         </div>
@@ -70,12 +69,12 @@
                     <div class="col-md-12">
                         <div class="form-group">
                             <label for="form_message">Message *</label>
-                            <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="send a message."></textarea>
+                            <textarea id="form_message" name="message" class="form-control" rows="4" required="required" data-error="send a message."></textarea>
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
-                    <div class="col-md-12">
-                        <input type="submit" class="btn btn-warning btn-send" value="Send message">
+                    <div class="col-md-12 d-flex justify-content-center">
+                        <input type="submit" class="btn btn-send py-3 px-4" value="Send message">
                     </div>
                 </div>
             </form>
@@ -88,6 +87,27 @@
 
 </section>
 
+
+<!-- content section -->
+<section class="creative-content">
+    <div class="container">
+        <div class="row d-flex align-items-center h-100">
+            <div class="col-12 col-lg-6">
+                <div class="img-box text-left">
+                    <img src="imgs/content.jpg">
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="content-box">
+                    <h2><span class="font-weight-bold d-block">Creative</span> <span class="font-weight-light">Content Section</span></h2>
+                    <p class="mt-4">Johnny metal recycling has been in recycling business for more than
+                        6 years.At Johnny metal recycling we all work hard to form long lasting relationships with our customers. We buy all types of Ferrous Metal such as Heavy steel (HMS), light steel, (pressing), machinery, etc. Non Ferrous Metal such as Brass and bronze, copper, insulation wire, batteries, radiators,stainless steel, etc. We buy your unwanted cars, damaged cars, and old cars as well. </p>
+                    <a href="#" class="btn btn-primary btn-lg rounded-0 mt-3">Know more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 <!--sticky phone -->

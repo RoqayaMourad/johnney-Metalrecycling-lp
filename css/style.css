@@ -6,7 +6,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
+/* ---------------------------header section------------------------------ */
 #header .header-content {
     background-size: cover;
     height: 100%;
@@ -41,9 +41,8 @@
 #header .info-text {
     width: 60%;
 }
-
+/* ---------------------- CTA btn ----------------------------- */
 .info-btn {
-    width:16%;
     font-size:1.5rem;   
     background-image: linear-gradient(to right, #f62a00 0%, #682694 51%, #f62a00  100%);
 }
@@ -55,7 +54,7 @@
 .btn {
     background-size: 200% auto;
     text-shadow: 0px 0px 10px rgba(0,0,0,0.2);
-    box-shadow: 0 0 15px #eee;
+    box-shadow: 0 0 10px rgb(235, 226, 226);
     border-radius: 10px;    
     transition: 0.55s;
    }
@@ -64,16 +63,124 @@
     background-position: right center;
   }
  
-
+/* --------------------------Header Form--------------------------------- */
 .header-bottom {
     height: 25%;
-    border-bottom: 1px solid #f62a00;
-    padding: 20px;
+    border-bottom: 5px solid;
+    border-image: linear-gradient(to right, #f62a00 0%, #682694 51%, #f62a00  100%);
+    border-image-slice:3;
+    padding:25px;
     background-color: white;
-    box-shadow: 0 0 10px 0px lightgrey;
+    box-shadow: 0 0 15px 0px lightgrey;
     width: 80%;
     margin: 1% auto;
 }
+.header-bottom form label {
+    letter-spacing:2.8px;
+    font-size: 1rem;
+    color: #682694;
+    position: absolute;
+    bottom: 11px;
+    transition: transform .2s ease-in-out;
+}
+.header-bottom .form-group {
+    position: relative;
+    margin:32px 0;
+}
+.header-bottom .form-group input , .form-group textarea{
+    width: 100%;
+    height: 36px;
+    border-width: 0 0 2px 0;
+    border-color: #652d90;
+    font-size: 1.1rem;
+    line-height: 26px;
+    
+}
+.header-bottom .form-group input:focus + .label{
+   transform: translateY(-24);
+}
+
+.header-bottom .form-group input:focus{
+    outline: none;
+    box-shadow:none;
+}
+
+.form-group textarea{
+    overflow: hidden;
+}
+.form-group textarea:focus{
+    outline: none;
+    box-shadow: none;
+    border-color: #682694;
+}
+.header-bottom .btn-send {
+    padding: 0 1rem;
+    font-weight: 600;
+    color:#682694;
+    border-radius: 3px;
+    background-image:
+      linear-gradient(to bottom, #683694 , #f62a00),
+      linear-gradient(to right, #683694 , #f62a00),
+      linear-gradient(to bottom, #f62a00,#683694 ),
+      linear-gradient(to right, #683694, #f62a00);
+    background-size: 3px 100%, 100% 3px, 3px 100%, 100% 3px;
+    background-position: 0 0, 0 0, 100% 0, 100% 100%;
+    background-repeat: no-repeat;
+    font-size: 1rem;
+
+    
+}
+/*----------------------------content section----------------------------------*/
+.creative-content {
+    font-family: 'Open Sans', sans-serif;
+    min-height:100vh;
+    padding:50px 0;
+    overflow:hidden;
+}
+.creative-content .img-box {
+    padding:40px 20px;
+    position:relative;
+}
+.creative-content .img-box:before {
+    content:'';
+    position:absolute;
+    width:1000px;
+    left:-600px;
+    top:-550px;
+    height:1500px;
+    background:#f7f7fb;
+    border-radius:100%;
+    z-index:-1 
+}
+.creative-content .img-box img {
+    width:100%;
+    max-width:300px;
+}
+.creative-content .content-box {
+    padding:40px 20px;
+}
+.creative-content .content-box h2 {
+    font-size:48px;
+    color:#504f61;
+}
+.creative-content .content-box h2 .font-weight-bold {
+    color:#494852 
+}
+.creative-content .content-box p {
+    font-size:20px;
+    color:#9c9ba5;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* sticky phone */
@@ -81,7 +188,7 @@
     z-index: 999;
     position: fixed;
     bottom:-16px;
-    right: -20px;
+    right: -15px;
 }
 .phonering-alo-phone.phonering-alo-static {
     opacity:.6
@@ -98,7 +205,7 @@
     background-color:transparent;
     border-radius:100% !important;
     border:2px solid rgba(30,30,30,0.4);
-    border:2px solid #bfebfc 9;
+    border:2px solid #f51b07 9;
     opacity:.1;
     -webkit-animation:phonering-alo-circle-anim 1.2s infinite ease-in-out;
     animation:phonering-alo-circle-anim 1.2s infinite ease-in-out;
@@ -119,19 +226,19 @@
 }
 
 .phonering-alo-phone.phonering-alo-hover .phonering-alo-ph-circle,.phonering-alo-phone:hover .phonering-alo-ph-circle {
-    border-color:#00aff2;
+    border-color:#eef200;
     opacity:.5
 }
 
 .phonering-alo-phone.phonering-alo-green.phonering-alo-hover .phonering-alo-ph-circle,.phonering-alo-phone.phonering-alo-green:hover .phonering-alo-ph-circle {
-    border-color:#75eb50 ;
-    border-color:#baf5a7;
+    border-color:#ec1d0a ;
+    border-color:#f3290e;
     opacity:.5
 }
 
 .phonering-alo-phone.phonering-alo-green .phonering-alo-ph-circle {
-    border-color:#00aff2 ;
-    border-color:#bfebfc;
+    border-color:#f21400 ;
+    border-color:#dfa694;
     opacity:.5
 }
 
@@ -141,7 +248,7 @@
 }
 
 .phonering-alo-phone.phonering-alo-gray .phonering-alo-ph-circle {
-    border-color:#75eb50 ;
+    border-color:#eb6250 ;
     opacity:.5
 }
 
@@ -174,20 +281,20 @@
 }
 
 .phonering-alo-phone.phonering-alo-hover .phonering-alo-ph-circle-fill,.phonering-alo-phone:hover .phonering-alo-ph-circle-fill {
-    background-color:rgba(0,175,242,0.5);
-    background-color:#00aff2 9;
+    background-color:rgba(242, 218, 0, 0.5);
+    background-color:#e2f200 9;
     opacity:.75!important
 }
 
 .phonering-alo-phone.phonering-alo-green.phonering-alo-hover .phonering-alo-ph-circle-fill,.phonering-alo-phone.phonering-alo-green:hover .phonering-alo-ph-circle-fill {
-    background-color:rgba(117,235,80,0.5);
-    background-color:#baf5a7 9;
+    background-color:rgba(225, 235, 80, 0.5);
+    background-color:#f4f5a7 9;
     opacity:.75!important
 }
 
 .phonering-alo-phone.phonering-alo-green .phonering-alo-ph-circle-fill {
-    background-color:rgba(0,175,242,0.5);
-    background-color:#a6e3fa 9
+    background-color:rgba(242, 20, 0, 0.5);
+    background-color:#fabaa6 9
 }
 
 .phonering-alo-phone.phonering-alo-gray.phonering-alo-hover .phonering-alo-ph-circle-fill,.phonering-alo-phone.phonering-alo-gray:hover .phonering-alo-ph-circle-fill {
@@ -197,7 +304,7 @@
 }
 
 .phonering-alo-phone.phonering-alo-gray .phonering-alo-ph-circle-fill {
-    background-color:rgba(117,235,80,0.5);
+    background-color:rgba(235, 93, 80, 0.5);
     opacity:.75!important
 }
 
@@ -228,17 +335,17 @@
 }
 
 .phonering-alo-phone.phonering-alo-hover .phonering-alo-ph-img-circle,.phonering-alo-phone:hover .phonering-alo-ph-img-circle {
-    background-color:#00aff2
+    background-color:#f2ee00
 }
 
 .phonering-alo-phone.phonering-alo-green.phonering-alo-hover .phonering-alo-ph-img-circle,.phonering-alo-phone.phonering-alo-green:hover .phonering-alo-ph-img-circle {
-    background-color:#75eb50;
-    background-color:#75eb50 9
+    background-color:#ebe950;
+    background-color:#ebe150 9
 }
 
 .phonering-alo-phone.phonering-alo-green .phonering-alo-ph-img-circle {
-    background-color:#00aff2;
-    background-color:#00aff2 9
+    background-color:#f62a00;
+    background-color:#f22400 9
 }
 
 .phonering-alo-phone.phonering-alo-gray.phonering-alo-hover .phonering-alo-ph-img-circle,.phonering-alo-phone.phonering-alo-gray:hover .phonering-alo-ph-img-circle {
@@ -246,7 +353,7 @@
 }
 
 .phonering-alo-phone.phonering-alo-gray .phonering-alo-ph-img-circle {
-    background-color:#75eb50
+    background-color:#eb5550
 }
 
 @-webkit-keyframes phonering-alo-circle-anim {
