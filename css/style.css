@@ -572,8 +572,8 @@ footer p{
 
 /* sticky phone */
 .phonering-alo-phone{
-    z-index: 999;
-    position: fixed;
+    z-index: 9999999999999999;
+    position:fixed;
     bottom:-16px;
     right: -15px;
 }
