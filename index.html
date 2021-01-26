@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -37,7 +39,7 @@
             </div>
         </div>
         <div class="header-bottom mb-5">
-            <form id="contact-form" method="post" action="*.php" role="form" class="py-lg-2">   
+            <form id="contact-form" method="post" action="*.php" role="form" class="pb-lg-2">   
                 <div class="controls">
                     <div class="row">
                         <div class="col-sm-4">
@@ -69,7 +71,7 @@
                     <div class="col-md-12">
                         <div class="form-group">
                             <label for="form_message">Message *</label>
-                            <textarea id="form_message" name="message" class="form-control" rows="4" required="required" data-error="send a message."></textarea>
+                            <textarea id="form_message" name="message" class="form-control text-area" rows="4" required="required" data-error="send a message."></textarea>
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
@@ -89,26 +91,374 @@
 
 
 <!-- content section -->
-<section class="creative-content">
-    <div class="container">
-        <div class="row d-flex align-items-center h-100">
+<section class="creative-content py-lg-5">
+    <div class="container-fluid">
+        <div class="row d-flex align-items-center pt-4">
             <div class="col-12 col-lg-6">
-                <div class="img-box text-left">
-                    <img src="imgs/content.jpg">
+                <div class="">
+                    <img class="img-fluid w-100" src="imgs/shutterstock_201953053.jpg">
                 </div>
             </div>
             <div class="col-12 col-lg-6">
                 <div class="content-box">
-                    <h2><span class="font-weight-bold d-block">Creative</span> <span class="font-weight-light">Content Section</span></h2>
+                    <h2><span class="font-weight-bold d-block">Johnney</span> <span class="font-weight-light">Metal Recylcing</span></h2>
                     <p class="mt-4">Johnny metal recycling has been in recycling business for more than
                         6 years.At Johnny metal recycling we all work hard to form long lasting relationships with our customers. We buy all types of Ferrous Metal such as Heavy steel (HMS), light steel, (pressing), machinery, etc. Non Ferrous Metal such as Brass and bronze, copper, insulation wire, batteries, radiators,stainless steel, etc. We buy your unwanted cars, damaged cars, and old cars as well. </p>
-                    <a href="#" class="btn btn-primary btn-lg rounded-0 mt-3">Know more</a>
+                    <a href="#" class="btn btn-send py-3 px-4">Know more</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+<!-- cta section -->
+<section class="cta-sec py-3">
+    <div class="container">
+    <div class="d-flex justify-content-center">
+        <div class="">
+                <p>Get Your Quote Now!</p>
+            </div>
+        <div class="ml-4 mt-1">
+            <button class="info-btn btn py-lg-2 px-lg-2">
+                <a class="">Get A free Quote</a>
+            </button>
+        </div>
+    </div>
+   
+    </div>
+
+</section>
+
+<!-- steps section -->
+<section class="steps py-5">
+    <div class="container work-process">
+        <div class="d-flex title pt-3 pb-4 text-center">     
+                <h3 class="m-auto">Our <span class="">Few Process</span> </h3>
+        </div>    
+        <!-- ============ step 1 =========== -->
+        <div class="row my-5">
+            <div class="col-md-5">
+                <div class="process-box process-left" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="process-step">
+                                <p class="m-0 p-0">Step</p>
+                                <h2 class="m-0 p-0">01</h2>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <h5>Get A Quote</h5>
+                            <p><small>Provide us the details of your car and we make an offer ( make, Model, odometer reading, Year, Location)</small></p>
+                        </div>
+                    </div>
+                    <div class="process-line-l"></div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-5">
+                <div class="process-point-right"></div>
+            </div>
+        </div>
+        <!-- ============ step 2 =========== -->
+        <div class="row">
+            
+            <div class="col-md-5">
+                <div class="process-point-left"></div>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-5">
+                <div class="process-box process-right" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="process-step">
+                                <p class="m-0 p-0">Step</p>
+                                <h2 class="m-0 p-0">02</h2>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <h5>Free Towing</h5>
+                            <p><small>When accepting our quote, Our team will organize towing at a time convenient for you.</small></p>
+                        </div>
+                    </div>
+                    <div class="process-line-r"></div>
+                </div>
+            </div>
+
+        </div>
+        <!-- ============ step 3 =========== -->
+        <div class="row">
+            <div class="col-md-5">
+                <div class="process-box process-left" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="process-step">
+                                <p class="m-0 p-0">Step</p>
+                                <h2 class="m-0 p-0">03</h2>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <h5>Time for Cash</h5>
+                            <p><small>The towing team will pick up the car and pay the amount quoted on the spot and ensures our customer is satisfied with our service before leaving.</small></p>
+                        </div>
+                    </div>
+                    <div class="process-line-l"></div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+    
+        </div>
+      
+         
+ </div>
+    
+</section>
+
+<!-- cta section -->
+<section class="cta-sec py-3">
+    <div class="container">
+    <div class="d-flex justify-content-center">
+        <div class="">
+                <p>Get Your Quote Now!</p>
+            </div>
+        <div class="ml-4 mt-1">
+            <button class="info-btn btn py-lg-2 px-lg-2">
+                <a class="">Get A free Quote</a>
+            </button>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- services section -->
+<section class="services py-5">
+    <div class="container">
+        <div class="d-flex title pt-3 pb-4 text-center">
+            <h3 class="m-auto"><span class="">Metal Recycling</span></h3>
+        </div>
+        <div class="services-p text-center">
+            <p>At Johnny Metal Recycling’s we offer cash for scrap, on items such as copper, lead, stainless steel,
+                brass, nickel, steel, aluminium, and wire. Plus scrap cars, truck parts, trailers and tractor equipment,
+                radiators, batteries, extrusion, and more.</p>
+        </div>
+        <div class="we-accept text-center">
+            <p>We Accept</p>
+        </div>
+        <div class="metals py-2">
+            <div class="row mx-3">
+                <div class="col">
+                    <div class="card home-cards mt-5 mt-lg-0 holder">
+                        <div class="card-img">
+                            <div class="layout"></div>
+                            <img src="imgs/copper.jpg" class="card-img-top" alt="..." />
+                            <div class="card-line"></div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Copper</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card home-cards mt-5 mt-lg-0 holder">
+                        <div class="card-img">
+                            <div class="layout"></div>
+                            <img src="imgs/nickle2.jpg" class="card-img-top" alt="..." />
+                            <div class="card-line"></div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Nickel</h5>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card home-cards mt-5 mt-lg-0 holder">
+                        <div class="card-img">
+                            <div class="layout"></div>
+                            <img src="imgs/aluminium.jpg" class="card-img-top" alt="..." />
+                            <div class="card-line"></div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Alumiium</h5>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card home-cards mt-5 mt-lg-0 holder">
+                        <div class="card-img">
+                            <div class="layout"></div>
+                            <img src="imgs/batteries.jpg" class="card-img-top" alt="..." />
+                            <div class="card-line"></div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Batteries</h5>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card home-cards mt-5 mt-lg-0 holder">
+                        <div class="card-img">
+                            <div class="layout"></div>
+                            <img src="imgs/stainless steel.jpg" class="card-img-top" alt="..." />
+                            <div class="card-line"></div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Stainless Steel</h5>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row mx-3 mt-lg-4">
+                <div class="col">
+                    <div class="card home-cards mt-5 mt-lg-0 holder">
+                        <div class="card-img">
+                            <div class="layout"></div>
+                            <img src="imgs/cans.jpg" class="card-img-top" alt="..." />
+                            <div class="card-line"></div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Cans</h5>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card home-cards mt-5 mt-lg-0 holder">
+                        <div class="card-img">
+                            <div class="layout"></div>
+                            <img src="imgs/radiators.jpg" class="card-img-top" alt="..." />
+                            <div class="card-line"></div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Radiators</h5>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card home-cards mt-5 mt-lg-0 holder">
+                        <div class="card-img">
+                            <div class="layout"></div>
+                            <img src="imgs/motors.jpg" class="card-img-top" alt="..." />
+                            <div class="card-line"></div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Electric Motors</h5>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card home-cards mt-5 mt-lg-0 holder">
+                        <div class="card-img">
+                            <div class="layout"></div>
+                            <img src="imgs/pvccables.jpg" class="card-img-top" alt="..." />
+                            <div class="card-line"></div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">PVC Cabels</h5>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card home-cards mt-5 mt-lg-0 holder">
+                        <div class="card-img">
+                            <div class="layout"></div>
+                            <img src="imgs/mixed metals.jpg" class="card-img-top" alt="..." />
+                            <div class="card-line"></div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Mixed Metals</h5>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+</div>
+</section>
+  
+<!-- cta section -->
+<section class="cta-sec py-3">
+    <div class="container">
+    <div class="d-flex justify-content-center">
+        <div class="">
+                <p>Get Your Quote Now!</p>
+            </div>
+        <div class="ml-4 mt-1">
+            <button class="info-btn btn py-lg-2 px-lg-2">
+                <a class="">Get A free Quote</a>
+            </button>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- contact us section -->
+<section class="contact-us p-3 pb-5">
+    <div class="d-flex">
+    <div class="title mx-auto my-5">
+        <h3>Get In <span class="">Touch</span> </h3>
+    </div>
+    </div>
+    <div class="container">
+    <form id="contact-form" method="post" action="*.php" role="form" class="pb-lg-2">   
+        <div class="controls">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="form_name" class="label">Name *</label>
+                        <input id="form_name" type="text" name="surname" class="form-control" required="required" data-error="name is required.">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="form_email">Email *</label>
+                        <input id="form_email" type="email" name="email" class="form-control" required="required" data-error="Valid email is required.">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="form_subject">Subject *</label>
+                        <input id="form_subject" type="tel" name="subject" class="form-control">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="form_message">Message *</label>
+                    <textarea id="form_message" name="message" class="form-control text-area" rows="4" required="required" data-error="send a message."></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-12 d-flex justify-content-center">
+                <input type="submit" class="btn btn-send py-3 px-4" value="Send message">
+            </div>
+        </div>
+    </form> 
+</div>
+</section>
+
+
+<!-- footer section -->
+<footer class="">
+    <div class="container">
+    <div class="row py-5">   
+      <div class="col-12 text-center">
+        <p>Copyright © 2021 || QuadSolutionsLLC.</p> 
+      </div>
+    </div>        
+    </div>
+</footer>
 
 <!--sticky phone -->
 <div class="phonering-alo-phone phonering-alo-green phonering-alo-show" id="phonering-alo-phoneIcon">
@@ -123,5 +473,10 @@
     <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js'></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
