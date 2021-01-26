@@ -4,6 +4,80 @@
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
 }
+/* ---------------------------loader------------------------------ */
+/* body, html {
+    background-color: #1c2020;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.loader {
+    margin: 0 auto;
+    width: 60px;
+    height: 50px;
+    text-align: center;
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+}
+.loader > div {
+    height: 100%;
+    width: 8px;
+    display: inline-block;
+    float:left;
+    margin-left: 2px;
+    -webkit-animation: delay 0.8s infinite ease-in-out;
+    animation: delay 0.8s infinite ease-in-out;
+}
+.loader .bar1 {
+    background-color: #754fa0;
+}
+.loader .bar2 {
+    background-color: #09b7bf;
+    -webkit-animation-delay: -0.7s;
+    animation-delay: -0.7s;
+}
+.loader .bar3 {
+    background-color: #90d36b;
+    -webkit-animation-delay: -0.6s;
+    animation-delay: -0.6s;
+}
+.loader .bar4 {
+    background-color: #f2d40d;
+    -webkit-animation-delay: -0.5s;
+    animation-delay: -0.5s;
+}
+.loader .bar5 {
+    background-color: #fcb12b;
+    -webkit-animation-delay: -0.4s;
+    animation-delay: -0.4s;
+}
+.loader .bar6 {
+    background-color: #ed1b72;
+    -webkit-animation-delay: -0.3s;
+    animation-delay: -0.3s;
+}
+@-webkit-keyframes delay {
+    0%, 40%, 100% {
+        -webkit-transform: scaleY(0.05);
+   }
+    20% {
+        -webkit-transform: scaleY(1);
+   }
+}
+@keyframes delay {
+    0%, 40%, 100% {
+        transform: scaleY(0.05);
+        -webkit-transform: scaleY(0.05);
+   }
+    20% {
+        transform: scaleY(1);
+        -webkit-transform: scaleY(1);
+   }
+} */
+
 
 /* ---------------------------header section------------------------------ */
 #header .header-content {
@@ -171,8 +245,8 @@
 
 
 /* -----------------------steps section----------------------------------- */
-.steps {
-  
+.steps{
+    background-color: #edeff1;
 }
 .process-box{
     background: #fff;
@@ -180,10 +254,10 @@
     border-radius: 15px;
     position: relative;
     color: #4e4c57;
-    box-shadow: 2px 2px 7px 0 #00000057;
+    box-shadow: 3px 3px 24px 0 #5a0a12;
 }
 .process-left:after{
-        content: "";
+    content: "";
     border-top: 15px solid #ffffff;
     border-bottom: 15px solid #ffffff;
     border-left: 15px solid #ffffff;
@@ -221,7 +295,7 @@
     position: relative;
     top: -26px;
     border-radius: 0px 0px 10px 10px;
-    box-shadow: -6px 8px 0px 0px #00000014;
+    box-shadow: 0px 10px 18px 4px #682694;
 }
 .process-point-right{
     background: #ffffff;
@@ -232,18 +306,18 @@
     box-shadow: 0 0 0px 4px #5c5c5c;
     margin: auto 0;
     position: absolute;
-    bottom: 40px;
-    left: -63px;
+    bottom:67px;
+    left: -46px;
 }
 .process-point-right:before{
     content: "";
-    height: 144px;
+    height: 180px;
     width: 11px;
     background: #5c5c5c;
     display: inline-grid;
     transform: rotate(36deg);
     position: relative;
-    left: -50px;
+    left: -62px;
     top: -0px;
 }
 .process-point-left{
@@ -255,20 +329,34 @@
     box-shadow: 0 0 0px 4px #5c5c5c;
     margin: auto 0;
     position: absolute;
-    bottom: 40px;
-    right: -63px;
+    bottom: 52px;
+    right: -56px;
+    z-index: 9999;
 }
 .process-point-left:before {
     content: "";
-    height: 144px;
+    height: 180px;
     width: 11px;
     background: #5c5c5c;
     display: inline-grid;
     transform: rotate(-38deg);
     position: relative;
-    left: 50px;
-    top: 0px;
+    left: 60px;
+    top: -2px;
 
+}
+.process-point-last{
+    background: #ffffff;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 8px solid #b891d2;
+    box-shadow: 0 0 0px 4px #5c5c5c;
+    margin: auto 0;
+    position: absolute;
+    bottom:80px;
+    left: -40px;
+    z-index: 9999999;
 }
 
 .process-last:before{
@@ -278,12 +366,26 @@
     z-index: 42354234542349;
 }
 .process-step p{
-    font-size:1.1rem;
-    color: #757380 !important;
+    font-weight: 600;
+    font-size: 1.9rem;
+    color: #7e2eb3 !important
 }
 .process-step h2{
-    font-size:2rem;
+    font-size:3rem;
     color: #4e4c57 !important;
+}
+
+.process-box h5{
+    font-size: 1.3rem;
+    color: #343a40;
+    letter-spacing: 2px;
+}
+.process-box p small{
+    width: 90%;
+    font-size: 0.8rem;
+    color: #040b13;
+
+
 }
 .process-step:after{
     content: "";
@@ -312,17 +414,26 @@
     height: 4px;
     position: absolute;
     width: 136px;
-    right: -153px;
-    top: 64px;
+    right: -157px;
+    top: 83px;
+    z-index: 9;
+}
+.process-line-2 {
+    background:#b891d2 ;
+    height: 4px;
+    position: absolute;
+    width: 145px;
+    right: -167px;
+    top: 92px;
     z-index: 9;
 }
 .process-line-r{
     background: #b891d2;
     height: 4px;
     position: absolute;
-    width: 136px;
-    left: -153px;
-    top: 63px;
+    width: 145px;
+    left: -166px;
+    top: 73px;
     z-index: 9;
 }
 
@@ -347,7 +458,7 @@
     position:absolute;
     bottom:0;
     left: 0px;
-    height:5px;
+    height:6px;
 }
 .services .title h3 span,
 .contact-us .title h3 span,
@@ -415,73 +526,7 @@
         visibility: visible;
 }
 
-
-
-
-
-
-  
-
-/* ---------------------------contact-us section---------------------------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* -------------------------------cta-section------------------------------------ */
+/* -------------------------------cta-section--------------------------------- */
 .cta-sec {
     background-color:#040b13 ;
 }
@@ -491,13 +536,6 @@
     font-weight: 600;
     color: #fff;
 }
-
-
-
-
-
-
-
 
 
 /* --------------------------footer section------------------------------- */
@@ -530,9 +568,6 @@ footer p{
 	}
 
 }
-
-
-
 
 
 /* sticky phone */
@@ -578,30 +613,30 @@ footer p{
 }
 
 .phonering-alo-phone.phonering-alo-hover .phonering-alo-ph-circle,.phonering-alo-phone:hover .phonering-alo-ph-circle {
-    border-color:#eef200;
-    opacity:.5
+    border-color:#f3f618;
+    opacity:.6
 }
 
 .phonering-alo-phone.phonering-alo-green.phonering-alo-hover .phonering-alo-ph-circle,.phonering-alo-phone.phonering-alo-green:hover .phonering-alo-ph-circle {
-    border-color:#ec1d0a ;
-    border-color:#f3290e;
-    opacity:.5
+    border-color:#ecd50a ;
+    border-color:#eff30e;
+    opacity:.6
 }
 
 .phonering-alo-phone.phonering-alo-green .phonering-alo-ph-circle {
     border-color:#f21400 ;
-    border-color:#dfa694;
-    opacity:.5
+    border-color:#e74c3d;
+    opacity:.6
 }
 
 .phonering-alo-phone.phonering-alo-gray.phonering-alo-hover .phonering-alo-ph-circle,.phonering-alo-phone.phonering-alo-gray:hover .phonering-alo-ph-circle {
     border-color:#ccc;
-    opacity:.5
+    opacity:.6
 }
 
 .phonering-alo-phone.phonering-alo-gray .phonering-alo-ph-circle {
-    border-color:#eb6250 ;
-    opacity:.5
+    border-color:#f1371f ;
+    opacity:.6
 }
 
 .phonering-alo-ph-circle-fill {
@@ -633,31 +668,31 @@ footer p{
 }
 
 .phonering-alo-phone.phonering-alo-hover .phonering-alo-ph-circle-fill,.phonering-alo-phone:hover .phonering-alo-ph-circle-fill {
-    background-color:rgba(242, 218, 0, 0.5);
+    background-color:rgba(246, 224, 26, 0.918);
     background-color:#e2f200 9;
-    opacity:.75!important
+    opacity:.8!important
 }
 
 .phonering-alo-phone.phonering-alo-green.phonering-alo-hover .phonering-alo-ph-circle-fill,.phonering-alo-phone.phonering-alo-green:hover .phonering-alo-ph-circle-fill {
-    background-color:rgba(225, 235, 80, 0.5);
-    background-color:#f4f5a7 9;
-    opacity:.75!important
+    background-color:rgba(227, 241, 31, 0.966);
+    background-color:#eff16a 9;
+    opacity:.8!important
 }
 
 .phonering-alo-phone.phonering-alo-green .phonering-alo-ph-circle-fill {
     background-color:rgba(242, 20, 0, 0.5);
-    background-color:#fabaa6 9
+    background-color:#f56254 9
 }
 
 .phonering-alo-phone.phonering-alo-gray.phonering-alo-hover .phonering-alo-ph-circle-fill,.phonering-alo-phone.phonering-alo-gray:hover .phonering-alo-ph-circle-fill {
     background-color:rgba(204,204,204,0.5);
     background-color:#ccc 9;
-    opacity:.75!important
+    opacity:.8!important
 }
 
 .phonering-alo-phone.phonering-alo-gray .phonering-alo-ph-circle-fill {
     background-color:rgba(235, 93, 80, 0.5);
-    opacity:.75!important
+    opacity:.8!important
 }
 
 .phonering-alo-ph-img-circle {
@@ -687,16 +722,16 @@ footer p{
 }
 
 .phonering-alo-phone.phonering-alo-hover .phonering-alo-ph-img-circle,.phonering-alo-phone:hover .phonering-alo-ph-img-circle {
-    background-color:#f2ee00
+    background-color:#f6f31b
 }
 
 .phonering-alo-phone.phonering-alo-green.phonering-alo-hover .phonering-alo-ph-img-circle,.phonering-alo-phone.phonering-alo-green:hover .phonering-alo-ph-img-circle {
-    background-color:#ebe950;
-    background-color:#ebe150 9
+    background-color:#eeeb26;
+    background-color:#f1e31c 9
 }
 
 .phonering-alo-phone.phonering-alo-green .phonering-alo-ph-img-circle {
-    background-color:#f62a00;
+    background-color:#ff0707;
     background-color:#f22400 9
 }
 
@@ -705,7 +740,7 @@ footer p{
 }
 
 .phonering-alo-phone.phonering-alo-gray .phonering-alo-ph-img-circle {
-    background-color:#eb5550
+    background-color:#ee130c
 }
 
 @-webkit-keyframes phonering-alo-circle-anim {
