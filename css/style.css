@@ -4,9 +4,10 @@
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
 }
-body{
-    /* overflow: hidden; */
-}
+html, body {
+    overflow-x:hidden 
+  } 
+  
 
 /* ---------------------------header section------------------------------ */
 #header{
@@ -489,6 +490,15 @@ footer {
 footer p{
     color: #bfbcca;
 }
+
+@media (max-width:368.98px){
+    .work-process h3 {
+        font-size: 2rem !important;
+    }
+    .work-process h3 span {
+        font-size: 2rem !important;
+    }
+}
 @media (max-width: 575.98px) {
     .services .title h3 span{
         font-size: 2.5rem;
@@ -497,6 +507,8 @@ footer p{
         padding-top: 1rem !important;
     }
  }
+
+
 
 @media (max-width: 767.98px) { 
 .cta-sec p {
@@ -522,6 +534,7 @@ footer p{
 .services .card-img-top {
     height:40vw;
 }
+}
 @media (max-width: 991.98px) { 
 #header .info-text {
     width: 80%;
@@ -535,26 +548,26 @@ footer p{
     left: 373px;
 }
 .process-line-l {
-    width: 57px;
-    right: 0px;
-    left: 293px;
-    top: 113px;
+    width: 57px !important;;
+    right: 0px !important;;
+    left: 293px !important;;
+    top: 113px !important;;
 }
 .process-point-right {
-   left: -59px;
-   bottom: 110px;
+   left: -59px !important;;
+   bottom: 110px !important;;
 }
-.process-point-right:before {
-    height: 212px;
-    transform: rotate(0deg);
-    left: -2px;
-    top: 19px;
+.process-point-right:before  {
+    height: 212px !important;;
+    transform: rotate(0deg) !important;;
+    left: -2px !important;;
+    top: 19px !important;;
 }
 .process-line-r {
-    width: 53px;
-    right: 0px;
-    left: -75px;
-    top: 103px;
+    width: 53px !important;
+    right: 0px !important;
+    left: -75px !important;
+    top: 103px !important;
 }
 .process-line-2 {
     right: -91px !important;
@@ -566,10 +579,10 @@ footer p{
     right: -85px !important;
 }
 .process-point-left:before {
-    height: 217px;
-    transform: rotate(0deg);
-    left: 0px;
-    top: 19px;
+    height: 217px !important;
+    transform: rotate(0deg) !important;
+    left: 0px!important;
+    top: 19px !important;
 }
 .process-point-last {
     bottom: 133px !important;
@@ -587,8 +600,8 @@ footer p{
         right: -26px;
     }
     .process-point-last {
-        bottom: 98px;
-        left: -32px;
+        bottom: 98px ;
+        left: -32px ;
  }
 }
 
