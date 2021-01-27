@@ -744,7 +744,7 @@ footer p{
     bottom:70px;
     right:70px;
     position:absolute;
-    background:rgba(30,30,30,0.1) url(../imgs/phone.png) no-repeat center center;
+    background:rgba(30,30,30,0.1) url(../imgs/phone.webp) no-repeat center center;
     border-radius:100% !important;
     border:2px solid transparent;
     -webkit-animation:phonering-alo-circle-img-anim 1s infinite ease-in-out;
